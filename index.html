@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asesoría Académica</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Preconexión para mejorar rendimiento -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+  <!-- Barra de navegación ACTUALIZADA -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <i class="fas fa-graduation-cap"></i>
+        Asesoría Académica
+      </div>
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="#inicio" class="nav-link">
+            <i class="fas fa-home"></i> Inicio
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#servicios" class="nav-link">
+            <i class="fas fa-concierge-bell"></i> Servicios
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#cursos" class="nav-link">
+            <i class="fas fa-book"></i> Cursos
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#tutores" class="nav-link">
+            <i class="fas fa-chalkboard-teacher"></i> Únete
+          </a>
+        </li>
+      </ul>
+      <!-- Botón de menú móvil -->
+      <div class="nav-toggle" id="navToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección de Inicio/Hero con imagen de fondo -->
+  <section id="inicio" class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Asesoría Académica</h1>
+      <p>Somos un grupo de estudiantes que está dispuesto a completar ese enfoque de estudio particular en el curso o área que necesites ayuda.</p>
+      <a href="#servicios" class="cta-button">Conoce Nuestros Servicios</a>
+    </div>
+    <!-- Indicador de scroll -->
+    <div class="scroll-indicator">
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- Bloque Informativo Flotante -->
+  <section class="info-block-floating">
+    <div class="info-floating-container">
+      <div class="info-floating-card">
+        <div class="info-item">
+          <i class="fas fa-clock"></i>
+          <h4>Horario de Atención</h4>
+          <p>Lunes a Viernes: 9:00 AM - 6:30 PM<br>Sábados hasta las 3:00 PM (hora Perú)</p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-headset"></i>
+          <h4>Soporte en Línea</h4>
+          <p>Chat en vivo vía WhatsApp<br>
+            <a href="https://wa.me/51987654321" target="_blank" rel="noopener">+51 987 654 321</a>
+          </p>
+        </div>
+        <div class="info-item">
+          <i class="fas fa-laptop"></i>
+          <h4>Modalidad</h4>
+          <p>100% Online vía Google Meet,<br>Zoom o Microsoft Teams</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Servicios con diseño diagonal -->
+  <section id="servicios" class="servicios-diagonal">
+    <div class="servicios-content">
+      <h1>Nuestros<br>Servicios<br>Especializados</h1>
+      <p>Ofrecemos asesorías personalizadas en matemáticas, inglés y programación con tutores altamente calificados. Cada sesión está diseñada para adaptarse a tu ritmo de aprendizaje y objetivos específicos.</p>
+      <a href="#cursos" class="btn-servicios">Explorar Cursos Disponibles</a>
+    </div>
+    <div class="servicios-imagen"></div>
+  </section>
+
+  <!-- Sección de Cursos ACTUALIZADA -->
+  <section id="cursos" class="cursos">
+    <div class="container">
+      <h2>CURSOS</h2>
+      
+      <div class="cursos-grid">
+        <!-- Curso de Matemática -->
+        <div class="curso-card soporte-card">
+          <div class="curso-icon soporte-icon">
+            <i class="fas fa-square-root-alt"></i>
+          </div>
+          <h3>Matemática</h3>
+          <p>Refuerza tus conocimientos en álgebra, geometría, cálculo y más.</p>
+          <a href="asesores/asesores_matemática.html" class="curso-btn btn-soporte">
+            <i class="fas fa-play-circle"></i> Seleccionar
+          </a>
+        </div>
+        
+        <!-- Curso de Inglés -->
+        <div class="curso-card soporte-card">
+          <div class="curso-icon soporte-icon">
+            <i class="fas fa-language"></i>
+          </div>
+          <h3>Inglés</h3>
+          <p>Mejora tu gramática, vocabulario y habilidades de comunicación.</p>
+          <a href="asesores/asesores_ingles.html" class="curso-btn btn-soporte">
+            <i class="fas fa-play-circle"></i> Seleccionar
+          </a>
+        </div>
+        
+        <!-- Curso de Programación -->
+        <div class="curso-card soporte-card">
+          <div class="curso-icon soporte-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3>Programación</h3>
+          <p>Aprende a programar desde cero y mejora en diferentes lenguajes.</p>
+          <a href="asesores/asesores_programacion.html" class="curso-btn btn-soporte">
+            <i class="fas fa-play-circle"></i> Seleccionar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Preguntas frecuentes -->
+  <section class="faq">
+    <div class="container">
+      <h2>Preguntas Frecuentes</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item">
+          <div class="faq-icon">💰</div>
+          <h3>¿Cuánto cuesta una asesoría?</h3>
+          <p>El precio depende de la materia y la duración de la clase.</p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-icon">💳</div>
+          <h3>¿Qué métodos de pago aceptan?</h3>
+          <p>Aceptamos transferencias bancarias y por ahora yape.</p>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-icon">💻</div>
+          <h3>¿Las clases son virtuales o presenciales?</h3>
+          <p>Actualmente todas nuestras clases son 100% online a través de Google Meet o Zoom.</p>
+        </div>
+        
+        <div class="faq-item">
+          <div class="faq-icon">📚</div>
+          <h3>¿Qué materias ofrecen?</h3>
+          <p>Contamos con tutores especializados en Matemáticas, Inglés y Programación.</p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-icon">👨‍🏫</div>
+          <h3>¿Quiénes pueden ser tutores?</h3>
+          <p>Estudiantes universitarios o egresados recientes con buen dominio del tema y habilidades para enseñar.</p>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-icon">📱</div>
+          <h3>¿Cómo me inscribo para enseñar?</h3>
+          <p>Ingresa en la sección "Únete" si quieres enseñar, o contáctanos por WhatsApp si buscas asesoría.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Únete como Tutor -->
+  <section id="tutores" class="tutores-moderno">
+    <div class="tutores-container">
+      
+      <!-- Lado izquierdo - Contenido inspirador -->
+      <div class="tutores-content-left">
+        <span class="tutores-badge">🌟 Oportunidad Única</span>
+        
+        <h1>Transforma Conocimiento<br>en Oportunidad</h1>
+        
+        <p>Únete a nuestra comunidad de tutores y comienza a impactar vidas mientras desarrollas tu carrera profesional. Conecta con estudiantes apasionados y construye tu legado educativo.</p>
+      </div>
+      
+      <!-- Lado derecho - Tarjeta de postulación -->
+      <div class="tutores-card-moderno">
+        <div class="tutores-card-header">
+          <div class="tutores-icon">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3>Comienza Ahora</h3>
+          <p>Postula en solo 5 minutos</p>
+        </div>
+        
+        <ul class="tutores-benefits">
+          <li>
+            <div class="benefit-icon">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <span class="benefit-text">Proceso rápido de aprobación</span>
+          </li>
+          <li>
+            <div class="benefit-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <span class="benefit-text">Crecimiento profesional garantizado</span>
+          </li>
+          <li>
+            <div class="benefit-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <span class="benefit-text">Comunidad de apoyo</span>
+          </li>
+          <li>
+            <div class="benefit-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <span class="benefit-text">Desarrollo continuo</span>
+          </li>
+        </ul>
+        
+        <a href="tutores/tutores.html" class="btn-tutores-moderno">
+          ¡Quiero Ser Tutor!
+        </a>
+      </div>
+      
+    </div>
+  </section>
+  
+  <!-- Botón de WhatsApp flotante -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/51987654321" target="_blank" rel="noopener" class="whatsapp-link">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <!-- Botón para volver al inicio -->
+  <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-center">
+          <h3>Asesoría Académica</h3>
+          <p>Tu éxito es nuestra prioridad</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/51987654321" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Asesoría Académica. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase en Vivo - Inglés Avanzado | Asesoría Académica</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="clase_ingles_03.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-graduation-cap"></i>
+                Asesoría Académica
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="../../index.html#inicio" class="nav-link">
+                        <i class="fas fa-home"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html#servicios" class="nav-link">
+                        <i class="fas fa-concierge-bell"></i> Servicios
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html#cursos" class="nav-link">
+                        <i class="fas fa-book"></i> Cursos
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html#tutores" class="nav-link">
+                        <i class="fas fa-chalkboard-teacher"></i> Únete
+                    </a>
+                </li>
+            </ul>
+            <!-- Botón de menú móvil -->
+            <div class="nav-toggle" id="navToggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero para Clase -->
+    <section class="hero-clase">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-bolt"></i> Clase en Vivo
+                </div>
+                <h1 id="heroTitulo">Inglés - 03</h1>
+                <p class="hero-subtitle" id="heroSubtitulo">Sesión interactiva de conversación avanzada con enfoque en fluidez y pronunciación</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span>Grupo reducido</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-clock"></i>
+                        <span>60 min intensivos</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Enfoque conversacional</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Indicador de scroll -->
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Sección de Información de la Clase -->
+    <section class="info-clase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Detalles de la Sesión</h2>
+                <p class="section-subtitle">Todo lo que necesitas saber sobre esta clase especializada</p>
+            </div>
+
+            <div class="clase-header">
+                <div class="clase-details">
+                    <div class="clase-title">
+                        <h2><i class="fas fa-language"></i> <span id="claseTema">Conversación Avanzada y Pronunciación</span></h2>
+                        <div class="clase-level">
+                            <span class="level-badge">Nivel Intermedio-Avanzado</span>
+                        </div>
+                    </div>
+                    <div class="clase-meta">
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <div class="meta-content">
+                                <span class="meta-label">Instructor</span>
+                                <span class="meta-text">Prof. María Fernández</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="meta-content">
+                                <span class="meta-label">Duración</span>
+                                <span class="meta-text">60 minutos</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="fas fa-calendar-alt"></i>
+                            </div>
+                            <div class="meta-content">
+                                <span class="meta-label">Fecha</span>
+                                <span class="meta-text" id="fecha-clase">11 Oct 2025</span>
+                            </div>
+                        </div>
+                        <div class="meta-item">
+                            <div class="meta-icon">
+                                <i class="fas fa-play-circle"></i>
+                            </div>
+                            <div class="meta-content">
+                                <span class="meta-label">Horario</span>
+                                <span class="meta-text" id="horario-clase">15:00 - 16:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clase-countdown">
+                    <div class="countdown-card">
+                        <h4>La clase comienza en:</h4>
+                        <div class="countdown-timer" id="countdown">
+                            <span class="countdown-number">24</span>
+                            <span class="countdown-label">Horas</span>
+                            <span class="countdown-number">45</span>
+                            <span class="countdown-label">Minutos</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Acceso a la Clase -->
+    <section class="acceso-clase">
+        <div class="container">
+            <div class="acceso-content">
+                <div class="acceso-info">
+                    <div class="acceso-header">
+                        <h2><i class="fas fa-door-open"></i> Acceso a la Sala Virtual</h2>
+                        <p>Conéctate a tu sesión de aprendizaje interactivo</p>
+                    </div>
+
+                    <div class="requisitos-acceso">
+                        <h4><i class="fas fa-clipboard-check"></i> Requisitos Técnicos</h4>
+                        <div class="requisitos-grid">
+                            <div class="requisito-item">
+                                <i class="fas fa-wifi"></i>
+                                <span>Conexión estable a internet</span>
+                            </div>
+                            <div class="requisito-item">
+                                <i class="fas fa-microphone"></i>
+                                <span>Micrófono para participar</span>
+                            </div>
+                            <div class="requisito-item">
+                                <i class="fas fa-headphones"></i>
+                                <span>Auriculares recomendados</span>
+                            </div>
+                            <div class="requisito-item">
+                                <i class="fas fa-video"></i>
+                                <span>Cámara opcional</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="preparacion-acceso">
+                        <h4><i class="fas fa-lightbulb"></i> Prepárate para la Sesión</h4>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Revisa el vocabulario previo</li>
+                            <li><i class="fas fa-check"></i> Prepara temas de conversación</li>
+                            <li><i class="fas fa-check"></i> Ten a mano diccionario digital</li>
+                            <li><i class="fas fa-check"></i> Conéctate 5 minutos antes</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="acceso-actions">
+                    <div class="sala-principal">
+                        <div class="sala-header">
+                            <i class="fas fa-video"></i>
+                            <h3>Sala de Clase Principal</h3>
+                        </div>
+                        <p>Acceso directo a la sesión interactiva en Google Meet</p>
+                        <a href="https://meet.google.com" class="btn-join" target="_blank" id="link-clase">
+                            <i class="fas fa-play-circle"></i> Ingresar a la Clase
+                        </a>
+                        <div class="sala-info">
+                            <p><strong>Importante:</strong> Debes tener tu reserva confirmada para ingresar</p>
+                            <div class="sala-tips">
+                                <span><i class="fas fa-info-circle"></i> Usa tu nombre real</span>
+                                <span><i class="fas fa-info-circle"></i> Activa audio y video</span>
+                                <span><i class="fas fa-info-circle"></i> Participa activamente</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="alternativas-conexion">
+                        <h4><i class="fas fa-plug"></i> Alternativas de Conexión</h4>
+                        <div class="alternativas-buttons">
+                            <a href="https://zoom.us" class="btn-alternative" target="_blank">
+                                <i class="fas fa-video"></i> Zoom Meeting
+                            </a>
+                            <a href="https://teams.microsoft.com" class="btn-alternative" target="_blank">
+                                <i class="fas fa-users"></i> Microsoft Teams
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Experiencia de Aprendizaje -->
+    <section class="experiencia-clase">
+        <div class="container">
+            <div class="section-header">
+                <h2>Experiencia de Aprendizaje Única</h2>
+                <p class="section-subtitle">Diseñada para maximizar tu fluidez y confianza en inglés</p>
+            </div>
+
+            <div class="experiencia-grid">
+                <div class="experiencia-card">
+                    <div class="experiencia-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Conversación Natural</h3>
+                    <p>Sesiones 100% en inglés con énfasis en conversación espontánea y situaciones reales de comunicación.</p>
+                    <div class="experiencia-features">
+                        <span><i class="fas fa-check"></i> Diálogos reales</span>
+                        <span><i class="fas fa-check"></i> Role-playing</span>
+                        <span><i class="fas fa-check"></i> Debates en grupo</span>
+                    </div>
+                </div>
+
+                <div class="experiencia-card">
+                    <div class="experiencia-icon">
+                        <i class="fas fa-volume-up"></i>
+                    </div>
+                    <h3>Pronunciación Perfecta</h3>
+                    <p>Corrección inmediata de pronunciación y ejercicios específicos para sonidos difíciles del inglés.</p>
+                    <div class="experiencia-features">
+                        <span><i class="fas fa-check"></i> Corrección en tiempo real</span>
+                        <span><i class="fas fa-check"></i> Ejercicios de entonación</span>
+                        <span><i class="fas fa-check"></i> Práctica de acento</span>
+                    </div>
+                </div>
+
+                <div class="experiencia-card">
+                    <div class="experiencia-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Inmersión Total</h3>
+                    <p>Ambiente 100% en inglés que te obliga a pensar y responder naturalmente en el idioma.</p>
+                    <div class="experiencia-features">
+                        <span><i class="fas fa-check"></i> Pensamiento en inglés</span>
+                        <span><i class="fas fa-check"></i> Respuesta automática</span>
+                        <span><i class="fas fa-check"></i> Fluidez natural</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Soporte -->
+    <section class="soporte">
+        <div class="container">
+            <div class="section-header">
+                <h2>Soporte y Asistencia</h2>
+                <p class="section-subtitle">Estamos aquí para ayudarte en cada paso</p>
+            </div>
+            
+            <div class="soporte-options">
+                <div class="soporte-card">
+                    <div class="soporte-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>Soporte Inmediato</h3>
+                    <p>Asistencia técnica durante la clase en vivo</p>
+                    <a href="https://wa.me/51952732870" class="btn-soporte" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp Rápido
+                    </a>
+                </div>
+                
+                <div class="soporte-card">
+                    <div class="soporte-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Soporte por Email</h3>
+                    <p>Respuesta detallada en menos de 24 horas</p>
+                    <a href="mailto:soporte@asesoriaacademica.com" class="btn-soporte">
+                        <i class="fas fa-envelope"></i> Email de Soporte
+                    </a>
+                </div>
+                
+                <div class="soporte-card">
+                    <div class="soporte-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Inscripciones</h3>
+                    <p>Información sobre próximas sesiones</p>
+                    <a href="https://wa.me/51967242419" class="btn-soporte" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Consultar Inscripción
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Botones Flotantes -->
+    <div class="floating-buttons">
+        <!-- Botón de Acceso para Asesores (FLOTANTE - ARRIBA DEL WHATSAPP) -->
+        <button id="btnAccesoAsesores" class="btn-floating btn-asesores">
+            <i class="fas fa-user-tie"></i>
+        </button>
+        
+        <!-- Botón de WhatsApp -->
+        <div class="whatsapp-float">
+            <a href="https://wa.me/51967242419" target="_blank" rel="noopener" class="whatsapp-link">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Botón para volver al inicio (SE MANTIENE EN IZQUIERDA) -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver al inicio">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Modal de Login -->
+    <div id="modalLogin" class="modal">
+        <div class="config-panel login-panel">
+            <div class="panel-header">
+                <i class="fas fa-user-tie"></i>
+                <h1>Acceso de Asesores</h1>
+                <span class="close-modal" onclick="cerrarModal()">&times;</span>
+            </div>
+            
+            <div class="panel-content">
+                <div class="config-section">
+                    <div class="config-item full-width">
+                        <label class="config-label">
+                            <i class="fas fa-user"></i>
+                            Usuario
+                        </label>
+                        <input type="text" class="config-input" id="usuario" placeholder="Ingresa tu usuario">
+                    </div>
+                    
+                    <div class="config-item full-width">
+                        <label class="config-label">
+                            <i class="fas fa-lock"></i>
+                            Contraseña
+                        </label>
+                        <input type="password" class="config-input" id="password" placeholder="Ingresa tu contraseña">
+                    </div>
+                </div>
+                
+                <div class="panel-actions">
+                    <button class="btn btn-secondary" onclick="cerrarModal()">
+                        <i class="fas fa-times"></i>
+                        Cancelar
+                    </button>
+                    <button class="btn btn-primary" onclick="iniciarSesion()">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Ingresar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Configuración -->
+    <div id="modalConfiguracion" class="modal">
+        <div class="config-panel">
+            <div class="panel-header">
+                <i class="fas fa-cog"></i>
+                <h1>Configuración de la Clase</h1>
+                <span class="close-modal" onclick="cerrarModal()">&times;</span>
+            </div>
+            
+            <div class="panel-content">
+                <!-- Sección Curso y Tema -->
+                <div class="config-section">
+                    <div class="section-title">
+                        <i class="fas fa-book"></i>
+                        <span>Información del Curso</span>
+                    </div>
+                    
+                    <div class="config-grid">
+                        <div class="config-item full-width">
+                            <label class="config-label">
+                                <i class="fas fa-graduation-cap"></i>
+                                Título Principal
+                            </label>
+                            <input type="text" class="config-input" id="configTitulo" placeholder="Ej: Inglés Avanzado" value="Inglés Avanzado">
+                        </div>
+                        
+                        <div class="config-item full-width">
+                            <label class="config-label">
+                                <i class="fas fa-language"></i>
+                                Tema de la Clase
+                            </label>
+                            <input type="text" class="config-input" id="configTema" placeholder="Ej: Conversación Avanzada y Pronunciación" value="Conversación Avanzada y Pronunciación">
+                        </div>
+                        
+                        <div class="config-item full-width">
+                            <label class="config-label">
+                                <i class="fas fa-comment"></i>
+                                Subtítulo Descriptivo
+                            </label>
+                            <textarea class="config-input config-textarea" id="configSubtitulo" placeholder="Describe brevemente la sesión...">Sesión interactiva de conversación avanzada con enfoque en fluidez y pronunciación</textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Sección Fecha y Horario -->
+                <div class="config-section">
+                    <div class="section-title">
+                        <i class="fas fa-calendar-alt"></i>
+                        <span>Fecha y Horario</span>
+                    </div>
+                    
+                    <div class="config-grid">
+                        <div class="config-item">
+                            <label class="config-label">
+                                <i class="fas fa-calendar-day"></i>
+                                Fecha de la clase
+                            </label>
+                            <input type="date" class="config-input" id="configFecha" value="2025-10-11">
+                        </div>
+                        
+                        <div class="config-item">
+                            <label class="config-label">
+                                <i class="fas fa-clock"></i>
+                                Horario
+                            </label>
+                            <div class="time-group">
+                                <input type="time" class="config-input" id="configHoraInicio" value="15:00">
+                                <span class="time-separator">a</span>
+                                <input type="time" class="config-input" id="configHoraFin" value="16:00">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sección Enlace -->
+                <div class="config-section">
+                    <div class="section-title">
+                        <i class="fas fa-link"></i>
+                        <span>Enlace de la Clase</span>
+                    </div>
+                    
+                    <div class="config-item full-width">
+                        <label class="config-label">
+                            <i class="fas fa-video"></i>
+                            URL de la sala virtual
+                        </label>
+                        <input type="url" class="config-input" id="configEnlace" placeholder="https://meet.google.com/..." value="https://meet.google.com">
+                    </div>
+                </div>
+                
+                <!-- Vista Previa -->
+                <div class="config-section">
+                    <div class="preview-section">
+                        <div class="preview-title">
+                            <i class="fas fa-eye"></i>
+                            Vista Previa
+                        </div>
+                        
+                        <div class="preview-grid">
+                            <div class="preview-item">
+                                <span class="preview-label">Título:</span>
+                                <span class="preview-value" id="previewTitulo">Inglés Avanzado</span>
+                            </div>
+                            
+                            <div class="preview-item">
+                                <span class="preview-label">Tema:</span>
+                                <span class="preview-value" id="previewTema">Conversación Avanzada y Pronunciación</span>
+                            </div>
+                            
+                            <div class="preview-item">
+                                <span class="preview-label">Fecha:</span>
+                                <span class="preview-value" id="previewFecha">11 oct 2025</span>
+                            </div>
+                            
+                            <div class="preview-item">
+                                <span class="preview-label">Horario:</span>
+                                <span class="preview-value" id="previewHorario">15:00 - 16:00</span>
+                            </div>
+                            
+                            <div class="preview-item full-width">
+                                <span class="preview-label">Enlace:</span>
+                                <span class="preview-value link-preview" id="previewEnlace">https://meet.google.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Panel de Acciones -->
+                <div class="panel-actions">
+                    <button class="btn btn-secondary" onclick="cerrarSesion()">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Cerrar Sesión
+                    </button>
+                    <button class="btn btn-secondary" onclick="resetearConfiguracion()">
+                        <i class="fas fa-undo"></i>
+                        Restablecer
+                    </button>
+                    <button class="btn btn-primary" onclick="guardarConfiguracion()">
+                        <i class="fas fa-save"></i>
+                        Guardar Cambios
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-center">
+                    <h3>Asesoría Académica</h3>
+                    <p>Transformando conocimiento en oportunidades de aprendizaje</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://wa.me/51967242419" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Asesoría Académica. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="clase_ingles_03.js"></script>
+</body>
+</html>
